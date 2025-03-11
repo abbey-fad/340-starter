@@ -1,7 +1,7 @@
-/* ******************************************
- * This server.js file is the primary file of the 
- * application. It is used to control the project.
+/* ****************************************** 
+ * Main Server File (server.js)
  *******************************************/
+
 /* ***********************
  * Require Statements
  *************************/
