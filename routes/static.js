@@ -1,14 +1,15 @@
-const express = require('express');
+const express = require("express");
+const path = require("path");
 const router = express.Router();
+const app = express();
 
-// Static Routes
-// Set up "public" folder / subfolders for static files
-router.use(express.static("public"));
-router.use("/css", express.static(__dirname + "public/css"));
-router.use("/js", express.static(__dirname + "public/js"));
-router.use("/images", express.static(__dirname + "public/images"));
+
+// Serve static files from "public" and its subfolders
+router.use(express.static(path.join(__dirname, "../public"))); // Use ".." to go up one level if needed
+router.use("/css", express.static(path.join(__dirname, "../public/css")));
+router.use("/js", express.static(path.join(__dirname, "../public/js")));
+router.use("/images", express.static(path.join(__dirname, "../public/images")));
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 module.exports = router;
-
-
-
