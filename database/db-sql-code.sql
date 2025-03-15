@@ -55,12 +55,6 @@ VALUES ('Custom'),
        ('Truck'),
        ('Sedan');
 
-SELECT * FROM public.classification
-ORDER BY classification_id ASC 
-
-SELECT * FROM public.inventory
-ORDER BY inv_id ASC 
-
 -- Update GM Hummer description using REPLACE function
 UPDATE inventory  
 SET inv_description = REPLACE(inv_description, 'small interiors', 'a huge interior')  
