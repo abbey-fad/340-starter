@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <%- include("../partials/header") %>
+
+    <main class="error-page">
+        <h1><%= title %></h1>
+        <p class="error-message"><%- message %></p>
+        
+        <section class="error-fun">
+            <h2>Oops! Something went wrong...</h2>
+            <img src="/images/error.png" alt="Funny Error Image">
+            <p>But don't worry, even the best websites have bad days!</p>
+            <a href="/" class="btn">Go Back Home</a>
+        </section>
+    </main>
+    
+    <%- include("../partials/footer") %>
